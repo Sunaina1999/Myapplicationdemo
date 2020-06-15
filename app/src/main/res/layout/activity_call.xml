@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/e"
+    tools:context=".call">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile No."
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:inputType="phone"
+        android:textColor="@android:color/white"
+        android:id="@+id/edt_mob"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Text"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/edt_text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mail-ID"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/edt_mail"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Website"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/edt_web"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_call"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:textSize="20dp"
+        android:id="@+id/btn_sms"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mail"
+        android:textSize="20dp"
+        android:id="@+id/btn_mail"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Website"
+        android:textSize="20dp"
+        android:id="@+id/btn_search"/>
+
+</LinearLayout>
