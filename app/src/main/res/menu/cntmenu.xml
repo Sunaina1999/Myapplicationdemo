@@ -3,11 +3,11 @@
 <item
     android:id="@+id/call"
     android:title="Call"
-android:icon="@drawable/call"
+    android:icon="@drawable/call"
     />
     <item
         android:id="@+id/sms"
         android:title="Sms"
-android:icon="@drawable/sms"
+        android:icon="@drawable/sms"
         />
 </menu>
