@@ -5,35 +5,46 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Login page"
+
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".popmenu"></activity>
-        <activity android:name=".cnt"></activity>
-        <activity
-            android:name=".opt"
-            android:label="@string/title_activity_opt"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".listview"></activity>
-        <activity android:name=".radio" />
-        <activity android:name=".order" />
-        <activity android:name=".url" />
-        <activity android:name=".call" />
-        <activity android:name=".webop" />
-        <activity android:name=".in1" />
-        <activity android:name=".second">
+        <activity android:name=".home"></activity>
+        <activity android:name=".webv"></activity>
+        <activity android:name=".sv"></activity>
+        <activity android:name=".spn" />
+        <activity android:name=".sp" />
+        <activity android:name=".spf" />
+        <activity android:name=".Frontpage" >
+
+        </activity>
+        <activity android:name=".popmenu" />
+        <activity android:name=".cnt" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".first" />
+        <activity
+            android:name=".opt"
+            android:label="@string/title_activity_opt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".listview" />
+        <activity android:name=".radio" />
+        <activity android:name=".order" />
+        <activity android:name=".url" />
+        <activity android:name=".call" />
+        <activity android:name=".webop" />
+        <activity android:name=".in1" />
+        <activity android:name=".second" />
+        <activity android:name=".first" >
+
+        </activity>
         <activity android:name=".MainActivity" />
     </application>
 

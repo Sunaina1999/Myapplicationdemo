@@ -5,14 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".first"
-    android:background="@mipmap/e">
+    tools:context=".first">
+    <com.jgabrielfreitas.core.BlurImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Blurimage"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/e"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
         android:textStyle="italic"
-        android:textColor="@android:color/primary_text_dark"
+        android:textColor="@android:color/black"
         android:textSize="50sp"
         android:layout_marginTop="20dp"
         android:id="@+id/txt_loform"
@@ -55,11 +62,13 @@
         android:textColor="@android:color/holo_orange_dark"
         android:id="@+id/edt_password">
     </EditText>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center">
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,5 +86,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
         android:id="@+id/btn_next"></Button>
+
     </LinearLayout>
+
     </LinearLayout>
