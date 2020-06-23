@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department's Information"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/di"/>
+<Button
+    android:id="@+id/titab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Time Table"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/di"
+    android:textSize="20dp"/>
+    <Button
+        android:id="@+id/sa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Attendance"
+        android:layout_below="@+id/di"
+        android:layout_toRightOf="@+id/titab"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/sn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student's Notes"
+        android:layout_below="@+id/titab"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/sy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Syllabus"
+        android:layout_toRightOf="@+id/sn"
+        android:layout_below="@+id/sa"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/td"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher's Details"
+        android:layout_below="@id/sn"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student's Details"
+        android:layout_below="@+id/sy"
+        android:layout_toRightOf="@id/td"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datesheet"
+        android:layout_below="@+id/td"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+        <Button
+            android:id="@+id/acr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allocated Class rooms And Labs"
+            android:layout_below="@+id/sd"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/dt"/>
+    <Button
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notice"
+        android:layout_below="@+id/dt"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
 
-</LinearLayout>
+
+</RelativeLayout>

@@ -22,13 +22,14 @@ public class second extends AppCompatActivity {
     Button btnsubmit;
     TextView g;
     RadioGroup rg;
-    RadioButton male, female;
+    RadioButton male, female,rs;
     CheckBox ch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
         edtfname = findViewById(R.id.edt_fname);
         edtlname = findViewById(R.id.edt_lname);
         edtpassword = findViewById(R.id.edt_password);
@@ -36,27 +37,23 @@ public class second extends AppCompatActivity {
         edtemail = findViewById(R.id.edt_email);
         edtcontact = findViewById(R.id.edt_contact);
         g = findViewById(R.id.g);
-        rg = findViewById(R.id.rg);
-        male = findViewById(R.id.male);
-        female = findViewById(R.id.female);
-//        if(male.isChecked())
-//        {
-//            Toast.makeText(this, "Male", Toast.LENGTH_SHORT).show();
-//        }
-//        else
-//        {
-//            Toast.makeText(this, "Female", Toast.LENGTH_SHORT).show();
-//        }
+        rg = findViewById(R.id.rg1);
+        male = findViewById(R.id.male1);
+        female = findViewById(R.id.female1);
         ch = findViewById(R.id.ch);
-        btnsubmit = findViewById(R.id.btn_submit);
         Intent i = getIntent();
         String msg = i.getStringExtra("key_1");
         edtfname.setText(msg);
         String a=i.getStringExtra("key_2");
         edtpassword.setText(a);
+        btnsubmit = findViewById(R.id.btn_submit1);
+
         btnsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int sid=rg.getCheckedRadioButtonId();
+                rs=findViewById(sid);
+                Toast.makeText(second.this,rs.getText(), Toast.LENGTH_SHORT).show();
                 if(edtpassword.getText().toString().equals(edtcpassword.getText().toString()))
                 {
                     Toast.makeText(second.this, "Password match", Toast.LENGTH_SHORT).show();
@@ -65,6 +62,7 @@ public class second extends AppCompatActivity {
                 {
                     Toast.makeText(second.this, "Password does not match", Toast.LENGTH_SHORT).show();
                 }
+
                 Intent ii=new Intent(second.this,home.class);
                 startActivity(ii);
             }
@@ -75,26 +73,25 @@ public class second extends AppCompatActivity {
         System.exit(0);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        SharedPreferences s= getSharedPreferences("Sf",0);
-        String s1=s.getString("name","");
-        int cc=s.getInt("password",0);
-        edtfname.setText(s1);
-        edtpassword.setText(String.valueOf(cc));
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        SharedPreferences s=getSharedPreferences("Sf",0);
-        SharedPreferences.Editor ee=s.edit();
-        String s1=edtfname.getText().toString();
-        int cc=Integer.parseInt(edtcpassword.getText().toString());
-        ee.putString("name",s1);
-        ee.putInt("password",cc);
-        ee.commit();
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        SharedPreferences s= getSharedPreferences("Sf",0);
+//        String s1=s.getString("name","");
+//        int cc=s.getInt("password",0);
+//        edtfname.setText(s1);
+//        edtpassword.setText(String.valueOf(cc));
+//    }
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        SharedPreferences s=getSharedPreferences("Sf",0);
+//        SharedPreferences.Editor ee=s.edit();
+//        String s1=edtfname.getText().toString();
+//        int cc=Integer.parseInt(edtcpassword.getText().toString());
+//        ee.putString("name",s1);
+//        ee.putInt("password",cc);
+//        ee.commit();
+//    }
 
 }

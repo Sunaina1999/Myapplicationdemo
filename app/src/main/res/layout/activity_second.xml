@@ -140,19 +140,23 @@ tools:context=".second">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:id="@+id/rg"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:layout_marginTop="305dp"
-            android:layout_marginLeft="30dp"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:layout_marginTop="305dp"
-            android:layout_marginLeft="30dp"/>
+            android:id="@+id/rg1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male1"
+                android:text="Male"
+                android:layout_marginTop="305dp"
+                android:layout_marginLeft="30dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female1"
+                android:text="Female"
+                android:layout_marginTop="305dp"
+                android:layout_marginLeft="30dp"/>
+        </RadioGroup>
+
     </LinearLayout>
         <CheckBox
             android:layout_width="wrap_content"
@@ -168,6 +172,7 @@ tools:context=".second">
         android:layout_height="wrap_content"
         android:text="Submit"
         android:textSize="20dp"
+        android:id="@+id/btn_submit1"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/ch"/>
 

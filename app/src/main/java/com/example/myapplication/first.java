@@ -26,7 +26,7 @@ public class first extends AppCompatActivity {
         edtname=findViewById(R.id.edt_name);
         edtpassword=findViewById(R.id.edt_password);
         blur=findViewById(R.id.Blurimage);
-        blur.setBlur(5);
+        blur.setBlur(10);
         btnback=findViewById(R.id.btn_back);
         btnnext=findViewById(R.id.btn_next);
         btnnext.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +56,8 @@ public class first extends AppCompatActivity {
 //                t.show();
 //                Intent intent=new Intent(getApplicationContext(),second.class);
 //                startActivity(intent);
-                finish();
+                Intent ii=new Intent(getApplicationContext(),home.class);
+                startActivity(ii);
 
             }
         });

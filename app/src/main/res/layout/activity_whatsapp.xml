@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/e"
+    tools:context=".whatsapp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/text"
+    android:layout_centerHorizontal="true"
+    android:text="WhatsApp"
+    android:textColor="@android:color/white"
+    android:textSize="30dp"/>
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MOBILE"
+        android:layout_below="@+id/ccode"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg"
+        android:layout_below="@+id/MOBILE"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/send"
+        android:layout_below="@+id/msg"/>
+</RelativeLayout>

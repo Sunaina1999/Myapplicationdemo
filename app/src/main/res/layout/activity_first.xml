@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,79 +14,90 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/e"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textStyle="italic"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/txt_loform"
-        android:layout_gravity="center">
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textSize="30dp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:id="@+id/txt_name">
-    </TextView>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textColor="@android:color/holo_orange_dark"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/edt_name">
-    </EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textSize="30dp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/txt_password">
-    </TextView>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="numberPassword"
-        android:layout_marginLeft="20dp"
-        android:textColor="@android:color/holo_orange_dark"
-        android:id="@+id/edt_password">
-    </EditText>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="150dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="false">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        android:textSize="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
-        android:id="@+id/btn_back"
-        ></Button>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        android:textSize="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
-        android:id="@+id/btn_next"></Button>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:textSize="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txt_loform"
+            android:layout_gravity="center">
+        </TextView>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Name"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:id="@+id/txt_name">-->
+<!--        </TextView>-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edt_name">
+        </EditText>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Password"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:id="@+id/txt_password">-->
+<!--        </TextView>-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:id="@+id/edt_password">
+        </EditText>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textSize="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_back"
+                ></Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_next"></Button>
     </LinearLayout>
-
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>

@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Login page"
-
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".home"></activity>
-        <activity android:name=".webv"></activity>
-        <activity android:name=".sv"></activity>
-        <activity android:name=".spn" />
-        <activity android:name=".sp" />
-        <activity android:name=".spf" />
-        <activity android:name=".Frontpage" >
-
-        </activity>
-        <activity android:name=".popmenu" />
-        <activity android:name=".cnt" >
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".timetable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".rcv" />
+        <activity android:name=".smpalarm">
+
+        </activity>
+        <activity android:name=".tmpick" />
+        <activity android:name=".dtpick" />
+        <activity android:name=".whatsapp" />
+        <activity android:name=".spnn" />
+        <activity android:name=".home" />
+        <activity android:name=".webv" />
+        <activity android:name=".sv" />
+        <activity android:name=".spn" />
+        <activity android:name=".sp" />
+        <activity android:name=".spf" />
+        <activity android:name=".Frontpage" />
+        <activity android:name=".popmenu" />
+        <activity android:name=".cnt" />
         <activity
             android:name=".opt"
             android:label="@string/title_activity_opt"
@@ -42,10 +51,10 @@
         <activity android:name=".webop" />
         <activity android:name=".in1" />
         <activity android:name=".second" />
-        <activity android:name=".first" >
-
-        </activity>
+        <activity android:name=".first" />
         <activity android:name=".MainActivity" />
+
+        <receiver android:name=".brdcst" />
     </application>
 
 </manifest>
