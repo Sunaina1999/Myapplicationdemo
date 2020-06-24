@@ -8,7 +8,7 @@
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Time Table Management System"
+    android:text="Time Table Management"
     android:textSize="20dp"
     android:layout_centerHorizontal="true"
     android:textColor="@android:color/black"
@@ -16,9 +16,26 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/sem"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tt"
+        android:textSize="20dp"
+        android:text="Semester"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the semester"
+        android:id="@+id/edtsem"
+        android:layout_below="@id/sem"
+        android:layout_toRightOf="@id/sem"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Days"
         android:textSize="20dp"
-        android:layout_below="@+id/tt"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edtsem"
         android:id="@+id/days"/>
     <EditText
         android:id="@+id/day"
@@ -26,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:hint="Enter number of days of the week"
+        android:layout_below="@+id/days"
         android:layout_toRightOf="@+id/days"/>
     <TextView
         android:layout_width="wrap_content"
@@ -33,14 +51,15 @@
         android:text="Time slot"
         android:id="@+id/ts"
         android:textSize="20dp"
-        android:layout_below="@+id/days"/>
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/day"/>
     <EditText
         android:id="@+id/tsl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:hint="Enter the time slot of the day"
-        android:layout_below="@id/day"
+        android:layout_below="@id/ts"
         android:layout_toRightOf="@id/ts" />
     <TextView
         android:layout_width="wrap_content"
@@ -48,13 +67,14 @@
         android:text="Break time"
         android:textSize="20dp"
         android:id="@+id/btime"
-        android:layout_below="@+id/ts"/>
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tsl"/>
     <EditText
         android:id="@+id/btimes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter the break time"
-        android:layout_below="@+id/tsl"
+        android:layout_below="@+id/btime"
         android:layout_toRightOf="@+id/btime"/>
     <TextView
         android:layout_width="wrap_content"
@@ -62,19 +82,23 @@
         android:text="Subjects"
         android:id="@+id/sub"
         android:textSize="20dp"
-        android:layout_below="@id/btime"/>
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/btimes"/>
     <EditText
+        android:id="@+id/subs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter the number the subjects"
         android:layout_toRightOf="@id/sub"
-        android:layout_below="@+id/btimes"
+        android:layout_below="@+id/sub"
         android:maxLines="15"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Click to see timetable"
-        android:layout_marginTop="30dp"
-        android:layout_below="@id/sub"/>
+        android:layout_below="@id/subs"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

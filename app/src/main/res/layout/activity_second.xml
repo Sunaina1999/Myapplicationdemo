@@ -4,125 +4,83 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="@mipmap/e"
 tools:context=".second">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome for registration"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:id="@+id/txt_regform"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="First name"
-        android:textSize="20dp"
-        android:textColor="@android:color/black"
-        android:id="@+id/txt_fname"
-        android:layout_below="@+id/txt_regform"
-        android:layout_marginTop="15dp"/>
-    <EditText
+    <com.jgabrielfreitas.core.BlurImageView
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Blurimage"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/e"/>
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:src="@drawable/r1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imvi"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Name"
+        android:textColor="@android:color/holo_purple"
         android:id="@+id/edt_fname"
+        android:paddingLeft="10dp"
         android:inputType="textPersonName"
-        android:layout_toRightOf="@+id/txt_fname"
+        android:layout_below="@id/imvi"
         android:layout_marginTop="45dp"
         android:layout_marginLeft="100dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Last name"
-        android:textSize="20dp"
-        android:textColor="@android:color/black"
-        android:id="@+id/txt_lname"
-        android:layout_below="@+id/txt_fname"
-        android:layout_marginTop="15dp"/>
+
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:id="@+id/edt_lname"
-        android:inputType="textPersonName"
-        android:layout_toRightOf="@+id/txt_lname"
-        android:layout_marginLeft="100dp"
-        android:layout_below="@+id/edt_fname"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email id"
         android:textSize="20dp"
-        android:textColor="@android:color/black"
-        android:id="@+id/txt_email"
-        android:layout_below="@+id/txt_lname"
-        android:layout_marginTop="15dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:hint="E-mail ID"
         android:id="@+id/edt_email"
+        android:textColor="@android:color/holo_purple"
+        android:paddingLeft="10dp"
         android:inputType="textEmailAddress"
-        android:layout_toRightOf="@+id/txt_email"
-        android:layout_marginLeft="120dp"
-        android:layout_below="@+id/edt_lname"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contact no."
-        android:textSize="20dp"
-        android:textColor="@android:color/black"
-        android:id="@+id/txt_contact"
-        android:layout_below="@+id/txt_email"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/edt_fname"
         android:layout_marginTop="15dp"/>
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:textSize="20dp"
+        android:hint="Contact No."
         android:id="@+id/edt_contact"
+        android:textColor="@android:color/holo_purple"
+        android:paddingLeft="10dp"
         android:inputType="phone"
-        android:layout_toRightOf="@+id/txt_email"
-        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
         android:layout_below="@+id/edt_email"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textSize="20dp"
-        android:textColor="@android:color/black"
-        android:id="@+id/txt_password"
-        android:layout_below="@+id/txt_contact"
-        android:layout_marginTop="15dp"/>
+
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:textSize="20dp"
+        android:hint="Password"
         android:id="@+id/edt_password"
         android:inputType="numberPassword"
-        android:layout_toRightOf="@+id/txt_password"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="105dp"
+        android:textColor="@android:color/holo_purple"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="100dp"
         android:layout_below="@+id/edt_contact"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Confirm password"
-        android:textSize="20dp"
-        android:textColor="@android:color/black"
-        android:id="@+id/txt_cpassword"
-        android:layout_below="@+id/txt_password"
-        android:layout_marginTop="15dp"/>
+
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:textSize="20dp"
+        android:hint="Confirm Password"
         android:id="@+id/edt_cpassword"
+        android:textColor="@android:color/holo_purple"
         android:inputType="numberPassword"
-        android:layout_toRightOf="@+id/txt_cpassword"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="30dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
         android:layout_below="@+id/edt_password"/>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -135,7 +93,8 @@ tools:context=".second">
             android:textSize="20dp"
             android:id="@+id/g"
             android:textColor="@android:color/black"
-            android:layout_marginTop="305dp"/>
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="20dp"/>
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -146,33 +105,37 @@ tools:context=".second">
                 android:layout_height="wrap_content"
                 android:id="@+id/male1"
                 android:text="Male"
-                android:layout_marginTop="305dp"
+                android:layout_marginTop="450dp"
                 android:layout_marginLeft="30dp"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/female1"
                 android:text="Female"
-                android:layout_marginTop="305dp"
+                android:layout_marginTop="450dp"
                 android:layout_marginLeft="30dp"/>
         </RadioGroup>
 
     </LinearLayout>
+
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="I have accepted an aggrement"
             android:id="@+id/ch"
             android:textSize="18dp"
-            android:layout_marginLeft="10dp"
-            android:layout_below="@+id/txt_cpassword"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/edt_cpassword"
             android:layout_marginTop="70dp"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="Register"
         android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/oval"
         android:id="@+id/btn_submit1"
+        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/ch"/>
 

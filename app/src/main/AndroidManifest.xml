@@ -15,17 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
-        <activity android:name=".timetable">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".pgr">
         </activity>
+        <activity android:name=".alert">
+
+        </activity>
+        <activity android:name=".timetable"></activity>
         <activity android:name=".rcv" />
-        <activity android:name=".smpalarm">
-
-        </activity>
+        <activity android:name=".smpalarm" />
         <activity android:name=".tmpick" />
         <activity android:name=".dtpick" />
         <activity android:name=".whatsapp" />
@@ -36,7 +33,13 @@
         <activity android:name=".spn" />
         <activity android:name=".sp" />
         <activity android:name=".spf" />
-        <activity android:name=".Frontpage" />
+        <activity android:name=".Frontpage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".popmenu" />
         <activity android:name=".cnt" />
         <activity
@@ -50,7 +53,9 @@
         <activity android:name=".call" />
         <activity android:name=".webop" />
         <activity android:name=".in1" />
-        <activity android:name=".second" />
+        <activity android:name=".second" >
+
+        </activity>
         <activity android:name=".first" />
         <activity android:name=".MainActivity" />
 

@@ -28,7 +28,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
@@ -53,13 +53,17 @@
 <!--            android:id="@+id/txt_name">-->
 <!--        </TextView>-->
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:hint="Name"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
             android:inputType="textPersonName"
+            android:textColorHint="@android:color/black"
             android:textColor="@android:color/holo_orange_dark"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:background="@drawable/ov"
+            android:layout_marginTop="40dp"
             android:id="@+id/edt_name">
         </EditText>
 <!--        <TextView-->
@@ -72,31 +76,50 @@
 <!--            android:id="@+id/txt_password">-->
 <!--        </TextView>-->
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:textColorHint="@android:color/black"
+            android:paddingLeft="20dp"
             android:inputType="numberPassword"
+            android:textSize="20dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:background="@drawable/ov"
+            android:layout_marginTop="15dp"
             android:textColor="@android:color/holo_orange_dark"
             android:id="@+id/edt_password">
         </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/black"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign In"
                 android:textSize="20dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="25dp"
                 android:layout_gravity="center"
                 android:id="@+id/btn_back"
                 ></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
                 android:textSize="20dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/btn_next"></Button>
     </LinearLayout>
     </androidx.cardview.widget.CardView>

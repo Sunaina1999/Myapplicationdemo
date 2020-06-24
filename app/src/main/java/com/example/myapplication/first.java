@@ -32,6 +32,16 @@ public class first extends AppCompatActivity {
         btnnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(edtname.length()==0)
+                {
+                    edtname.setText("Username does not empty");
+                }
+                else if(edtpassword.length()==0)
+                {
+                    edtpassword.setText("Password does not empty");
+                }
+                else
+                {
                 String name=edtname.getText().toString();
                String pass= (edtpassword.getText().toString());
                 Toast.makeText(getApplicationContext(),"Welcome "+name,Toast.LENGTH_SHORT).show();
@@ -40,7 +50,7 @@ public class first extends AppCompatActivity {
                 i.putExtra("key_1",name);
                 i.putExtra("key_2",pass);
                 startActivity(i);
-            }
+            }}
         });
 
 
@@ -63,7 +73,9 @@ public class first extends AppCompatActivity {
         });
 
     }
-
+    public void onBackPressed() {
+        super.onBackPressed();
+        System.exit(0);}
 //    @Override
 //    protected void onResume() {
 //        super.onResume();

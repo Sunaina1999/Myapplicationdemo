@@ -18,7 +18,7 @@ import android.widget.Toast;
 import java.util.zip.Inflater;
 
 public class second extends AppCompatActivity {
-    EditText edtfname, edtlname, edtpassword, edtcpassword, edtemail, edtcontact;
+    EditText edtfname,edtpassword, edtcpassword, edtemail, edtcontact;
     Button btnsubmit;
     TextView g;
     RadioGroup rg;
@@ -31,7 +31,6 @@ public class second extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         edtfname = findViewById(R.id.edt_fname);
-        edtlname = findViewById(R.id.edt_lname);
         edtpassword = findViewById(R.id.edt_password);
         edtcpassword = findViewById(R.id.edt_cpassword);
         edtemail = findViewById(R.id.edt_email);
@@ -53,18 +52,18 @@ public class second extends AppCompatActivity {
             public void onClick(View v) {
                 int sid=rg.getCheckedRadioButtonId();
                 rs=findViewById(sid);
-                Toast.makeText(second.this,rs.getText(), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(second.this,rs.getText(), Toast.LENGTH_SHORT).show();
                 if(edtpassword.getText().toString().equals(edtcpassword.getText().toString()))
                 {
                     Toast.makeText(second.this, "Password match", Toast.LENGTH_SHORT).show();
+                    Intent ii=new Intent(second.this,home.class);
+                    startActivity(ii);
                 }
                 else
                 {
                     Toast.makeText(second.this, "Password does not match", Toast.LENGTH_SHORT).show();
                 }
 
-                Intent ii=new Intent(second.this,home.class);
-                startActivity(ii);
             }
         });
     }
