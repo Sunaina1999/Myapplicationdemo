@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgotpass">
+    <com.jgabrielfreitas.core.BlurImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Blurimage"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/e"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txt_loform1"
+            android:layout_gravity="center">
+        </TextView>
+        <EditText
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:hint="New Password"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:inputType="textPersonName"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_gravity="center"
+            android:background="@drawable/ov"
+            android:layout_marginTop="40dp"
+            android:id="@+id/newpass">
+        </EditText>
+        <EditText
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColorHint="@android:color/black"
+            android:paddingLeft="10dp"
+            android:inputType="numberPassword"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ov"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:id="@+id/cnewpass">
+        </EditText>
+        <Button
+            android:id="@+id/forgotpassw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -37,14 +37,26 @@
         android:layout_marginLeft="20dp"
         android:layout_below="@+id/edtsem"
         android:id="@+id/days"/>
-    <EditText
-        android:id="@+id/day"
+<!--    <EditText-->
+<!--        android:id="@+id/day"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:hint="Enter number of days of the week"-->
+<!--        android:layout_below="@+id/days"-->
+<!--        android:layout_toRightOf="@+id/days"/>-->
+<!--    <EditText-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/dayspin"-->
+<!--        android:layout_toRightOf="@id/days"-->
+<!--        android:layout_below="@+id/day"/>-->
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:hint="Enter number of days of the week"
-        android:layout_below="@+id/days"
-        android:layout_toRightOf="@+id/days"/>
+        android:layout_toRightOf="@id/days"
+        android:layout_below="@id/days"
+        android:id="@+id/spinne"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,7 +64,7 @@
         android:id="@+id/ts"
         android:textSize="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_below="@+id/day"/>
+        android:layout_below="@+id/spinne"/>
     <EditText
         android:id="@+id/tsl"
         android:layout_width="wrap_content"
@@ -93,6 +105,7 @@
         android:layout_below="@+id/sub"
         android:maxLines="15"/>
     <Button
+        android:id="@+id/timemana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Click to see timetable"

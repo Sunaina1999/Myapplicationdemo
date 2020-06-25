@@ -17,7 +17,7 @@ import com.jgabrielfreitas.core.BlurImageView;
 
 public class first extends AppCompatActivity {
  EditText edtname,edtpassword;
- Button btnback,btnnext;
+ Button btnsignup,btnsignin,b;
  BlurImageView blur;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,34 +27,23 @@ public class first extends AppCompatActivity {
         edtpassword=findViewById(R.id.edt_password);
         blur=findViewById(R.id.Blurimage);
         blur.setBlur(10);
-        btnback=findViewById(R.id.btn_back);
-        btnnext=findViewById(R.id.btn_next);
-        btnnext.setOnClickListener(new View.OnClickListener() {
+        b=findViewById(R.id.forgot);
+        btnsignin=findViewById(R.id.btn_back);
+        btnsignup=findViewById(R.id.btn_next);
+        btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(edtname.length()==0)
-                {
-                    edtname.setText("Username does not empty");
-                }
-                else if(edtpassword.length()==0)
-                {
-                    edtpassword.setText("Password does not empty");
-                }
-                else
-                {
                 String name=edtname.getText().toString();
-               String pass= (edtpassword.getText().toString());
+                String pass= (edtpassword.getText().toString());
                 Toast.makeText(getApplicationContext(),"Welcome "+name,Toast.LENGTH_SHORT).show();
-//                String a= (edtname.getText()).toString();
                 Intent i=new Intent(getApplicationContext(),second.class);
                 i.putExtra("key_1",name);
                 i.putExtra("key_2",pass);
                 startActivity(i);
-            }}
-        });
+            }});
 
 
-        btnback.setOnClickListener(new View.OnClickListener() {
+        btnsignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //customlayout
@@ -66,9 +55,26 @@ public class first extends AppCompatActivity {
 //                t.show();
 //                Intent intent=new Intent(getApplicationContext(),second.class);
 //                startActivity(intent);
-                Intent ii=new Intent(getApplicationContext(),home.class);
-                startActivity(ii);
+                if(edtname.length()==0)
+                {
+                    edtname.setError("Username does not empty");
+                }
+                else if(edtpassword.length()==0)
+                {
+                    edtpassword.setError("Password does not empty");
+                }
+                else
+                {
+                    Intent ii=new Intent(getApplicationContext(),home.class);
+                    startActivity(ii);
 
+            }}
+        });
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a=new Intent(first.this,forgotpass.class);
+                startActivity(a);
             }
         });
 

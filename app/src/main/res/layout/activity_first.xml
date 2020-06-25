@@ -52,7 +52,13 @@
 <!--            android:layout_marginTop="20dp"-->
 <!--            android:id="@+id/txt_name">-->
 <!--        </TextView>-->
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nameinput"/>
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:hint="Name"
@@ -61,11 +67,22 @@
             android:inputType="textPersonName"
             android:textColorHint="@android:color/black"
             android:textColor="@android:color/holo_orange_dark"
-            android:layout_gravity="center"
             android:background="@drawable/ov"
-            android:layout_marginTop="40dp"
-            android:id="@+id/edt_name">
-        </EditText>
+            android:layout_gravity="center"
+            android:id="@+id/edt_name"/>
+<!--        <EditText-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Name"-->
+<!--            android:textSize="20dp"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textColorHint="@android:color/black"-->
+<!--            android:textColor="@android:color/holo_orange_dark"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/ov"-->
+<!--            android:id="@+id/edt_name">-->
+<!--        </EditText>-->
 <!--        <TextView-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
@@ -89,13 +106,15 @@
             android:textColor="@android:color/holo_orange_dark"
             android:id="@+id/edt_password">
         </EditText>
-        <TextView
+        <Button
+            android:id="@+id/forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgot Password?"
-            android:textSize="15dp"
+            android:textSize="10dp"
+            android:background="@android:color/transparent"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="1dp"
             android:textColor="@android:color/black"/>
             <Button
                 android:layout_width="wrap_content"
