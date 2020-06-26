@@ -37,20 +37,6 @@
         android:layout_marginLeft="20dp"
         android:layout_below="@+id/edtsem"
         android:id="@+id/days"/>
-<!--    <EditText-->
-<!--        android:id="@+id/day"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginLeft="10dp"-->
-<!--        android:hint="Enter number of days of the week"-->
-<!--        android:layout_below="@+id/days"-->
-<!--        android:layout_toRightOf="@+id/days"/>-->
-<!--    <EditText-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/dayspin"-->
-<!--        android:layout_toRightOf="@id/days"-->
-<!--        android:layout_below="@+id/day"/>-->
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

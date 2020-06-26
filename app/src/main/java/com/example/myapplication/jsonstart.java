@@ -15,7 +15,7 @@ TextView jt;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jsonstart);
     jt=findViewById(R.id.jt);
-    String jstr="{\"Student\":[{\"id\":\"1\",\"name\":\"Aman Saini\"},{\"id\":\"2\",\"name\":\"Vikram\"}]}";
+    String jstr="{\"Student\":[{\"id\":\"1\",\"name\":\"Aman Saini\",\"marks\":\"50\",\"subject\":\"daa\"},{\"id\":\"2\",\"name\":\"Vikram\",\"marks\":\"80\":\"subject\":\"toc\"}]}";
     String jdata="";
     try {
         JSONObject jsonObject=new JSONObject(jstr);
@@ -25,7 +25,9 @@ TextView jt;
 JSONObject jsonObject1=jsonArray.optJSONObject(z);
        int id=Integer.parseInt(jsonObject1.optString("id").toString());
        String name=jsonObject1.optString("name").toString();
-       jdata+="record"+z+":\n id="+id+":\n name="+name+"\n";
+            int marks=Integer.parseInt(jsonObject1.optString("marks").toString());
+            String subject=jsonObject1.optString("subject").toString();
+       jdata+="record"+z+":\n id="+id+":\n name="+name+":\n marks="+marks+":\n subject="+subject+"\n";
        jt.setText(jdata);
         }
     }

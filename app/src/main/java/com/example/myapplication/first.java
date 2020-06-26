@@ -13,10 +13,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.jgabrielfreitas.core.BlurImageView;
 
 public class first extends AppCompatActivity {
- EditText edtname,edtpassword;
+ private TextInputLayout edtname,edtpassword;
  Button btnsignup,btnsignin,b;
  BlurImageView blur;
     @Override
@@ -33,8 +35,8 @@ public class first extends AppCompatActivity {
         btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name=edtname.getText().toString();
-                String pass= (edtpassword.getText().toString());
+                String name=edtname.getEditText().toString();
+                String pass= (edtpassword.getEditText().toString());
                 Toast.makeText(getApplicationContext(),"Welcome "+name,Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(getApplicationContext(),second.class);
                 i.putExtra("key_1",name);
@@ -57,11 +59,11 @@ public class first extends AppCompatActivity {
 //                startActivity(intent);
                 if(edtname.length()==0)
                 {
-                    edtname.setError("Username does not empty");
+                    edtname.setError("Field can't be empty");
                 }
                 else if(edtpassword.length()==0)
                 {
-                    edtpassword.setError("Password does not empty");
+                    edtpassword.setError("Field can't be empty");
                 }
                 else
                 {
