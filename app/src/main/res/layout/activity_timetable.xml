@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/days"
         android:layout_below="@id/days"
-        android:id="@+id/spinne"/>
+        android:id="@+id/pant"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
         android:id="@+id/ts"
         android:textSize="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_below="@+id/spinne"/>
+        android:layout_below="@+id/pant"/>
     <EditText
         android:id="@+id/tsl"
         android:layout_width="wrap_content"
@@ -83,21 +83,29 @@
         android:layout_marginLeft="20dp"
         android:layout_below="@id/btimes"/>
     <EditText
-        android:id="@+id/subs"
+        android:id="@+id/subs1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter the number the subjects"
         android:layout_toRightOf="@id/sub"
         android:layout_below="@+id/sub"
         android:maxLines="15"/>
+    <EditText
+        android:id="@+id/subss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the number the subjects"
+        android:layout_toRightOf="@id/sub"
+        android:layout_below="@+id/subs1"
+        android:maxLines="15"/>
     <Button
         android:id="@+id/timemana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Click to see timetable"
-        android:layout_below="@id/subs"
+        android:layout_below="@id/subss"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Random;
 
@@ -46,13 +47,11 @@ mSwipeRefreshLayout=findViewById(R.id.swipe);
             @Override
             public void onRefresh() {
                 shuffle();
-                mSwipeRefreshLayout.setRefreshing(false);
             }
         });
     }
 
     private void shuffle() {
-//        Collections.shuffle(Arrays.asList(Subjects),new Random(System.currentTimeMillis()));
         Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
         int i=0;
         {
@@ -73,6 +72,8 @@ mSwipeRefreshLayout=findViewById(R.id.swipe);
             case 4:
                 Toast.makeText(this, "MMED", Toast.LENGTH_SHORT).show();
                 break;
-        }
+        } i=i+1;
+        mSwipeRefreshLayout.setRefreshing(false);
     }
+
 }}

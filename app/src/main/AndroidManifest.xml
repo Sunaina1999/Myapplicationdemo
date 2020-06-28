@@ -15,11 +15,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
+        <activity android:name=".notice"></activity>
+        <activity android:name=".attendance" />
+        <activity android:name=".current" />
+        <activity android:name=".tablegrid" />
         <activity android:name=".forgotpass" />
         <activity android:name=".jsonstart" />
         <activity android:name=".pgr" />
         <activity android:name=".alert" />
-        <activity android:name=".timetable" />
+        <activity android:name=".timetable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".rcv" />
         <activity android:name=".smpalarm" />
         <activity android:name=".tmpick" />
@@ -39,9 +49,7 @@
             android:name=".opt"
             android:label="@string/title_activity_opt"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".listview" >
-
-        </activity>
+        <activity android:name=".listview" />
         <activity android:name=".radio" />
         <activity android:name=".order" />
         <activity android:name=".url" />
@@ -49,13 +57,7 @@
         <activity android:name=".webop" />
         <activity android:name=".in1" />
         <activity android:name=".second" />
-        <activity android:name=".first">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".first" />
         <activity android:name=".MainActivity" />
 
         <receiver android:name=".brdcst" />

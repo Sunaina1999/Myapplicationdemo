@@ -11,5 +11,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 android:id="@+id/lv" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvvv"
+        android:text="Swipe to see time"/>
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

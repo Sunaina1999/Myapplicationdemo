@@ -55,22 +55,21 @@ public class first extends AppCompatActivity {
 //                t.setDuration(Toast.LENGTH_SHORT);
 //                t.setView(layout);
 //                t.show();
-//                Intent intent=new Intent(getApplicationContext(),second.class);
-//                startActivity(intent);
-                if(edtname.length()==0)
-                {
-                    edtname.setError("Field can't be empty");
-                }
-                else if(edtpassword.length()==0)
-                {
-                    edtpassword.setError("Field can't be empty");
-                }
-                else
-                {
-                    Intent ii=new Intent(getApplicationContext(),home.class);
-                    startActivity(ii);
-
-            }}
+//                if(edtname.length()==0)
+//                {
+//                    edtname.setError("Field can't be empty");
+//                }
+//                else if(edtpassword.length()==0)
+//                {
+//                    edtpassword.setError("Field can't be empty");
+//                }
+//                else
+//                {
+//                    Intent ii=new Intent(getApplicationContext(),home.class);
+//                    startActivity(ii);
+//
+//            }
+        }
         });
         b.setOnClickListener(new View.OnClickListener() {
             @Override
