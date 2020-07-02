@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notes">
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/student" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add notes here...."
+    android:textColor="@android:color/black"
+    android:textSize="20dp"
+    android:layout_below="@id/im"
+        android:layout_marginTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/notes"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter the name of the file"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ov"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/notes"
+        android:id="@+id/notes1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notesbutt"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/notes1"
+        android:text="Upload"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notesbutt1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/notesbutt"
+        android:text="View"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notesbutt2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/notesbutt1"
+        android:text="Delete"/>
+</RelativeLayout>

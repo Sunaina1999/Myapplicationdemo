@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherde">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/teacher"
+        android:id="@+id/tim"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher's Info"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tim"
+        android:id="@+id/ti"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/ti"
+        android:id="@+id/dett"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dett1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/ti"
+        android:background="@drawable/cell_shape"
+        android:layout_toRightOf="@+id/dett"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact No."
+        android:layout_below="@id/dett"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dett2"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dett3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/cell_shape"
+        android:layout_below="@id/dett1"
+        android:layout_toRightOf="@id/dett"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email ID"
+        android:layout_below="@id/dett3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dett4"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dett5"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/cell_shape"
+        android:layout_below="@id/dett3"
+        android:layout_toRightOf="@id/dett4"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dett4"
+        android:id="@+id/bde"
+        android:text="Insert"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bde"
+        android:text="Modify"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bde1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bde1"
+        android:layout_centerHorizontal="true"
+        android:text="Delete"
+        android:id="@+id/bde2"/>
+
+</RelativeLayout>

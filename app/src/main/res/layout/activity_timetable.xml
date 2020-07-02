@@ -8,94 +8,113 @@
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
     android:text="Time Table Management"
     android:textSize="20dp"
     android:layout_centerHorizontal="true"
     android:textColor="@android:color/black"
     android:id="@+id/tt"/>
-    <TextView
-        android:layout_width="wrap_content"
+    <Spinner
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:id="@+id/sem"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
         android:layout_below="@id/tt"
-        android:textSize="20dp"
-        android:text="Semester"/>
+        android:background="@drawable/ov"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/pant"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/sem"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@id/tt"-->
+<!--        android:textSize="20dp"-->
+<!--        android:text="Semester"/>-->
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:hint="Enter the semester"
         android:id="@+id/edtsem"
-        android:layout_below="@id/sem"
-        android:layout_toRightOf="@id/sem"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Days"
-        android:textSize="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@+id/edtsem"
-        android:id="@+id/days"/>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/days"
-        android:layout_below="@id/days"
-        android:id="@+id/pant"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time slot"
-        android:id="@+id/ts"
-        android:textSize="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@+id/pant"/>
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ov"
+        android:layout_below="@id/pant"
+        android:paddingLeft="10dp"
+        android:layout_centerInParent="true"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Days"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@+id/edtsem"-->
+<!--        android:id="@+id/days"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Time slot"-->
+<!--        android:id="@+id/ts"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@+id/pant"/>-->
     <EditText
         android:id="@+id/tsl"
-        android:layout_width="wrap_content"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
         android:hint="Enter the time slot of the day"
-        android:layout_below="@id/ts"
-        android:layout_toRightOf="@id/ts" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Break time"
-        android:textSize="20dp"
-        android:id="@+id/btime"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/tsl"/>
+        android:background="@drawable/ov"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/edtsem" />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Break time"-->
+<!--        android:textSize="20dp"-->
+<!--        android:id="@+id/btime"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@id/tsl"/>-->
     <EditText
         android:id="@+id/btimes"
-        android:layout_width="wrap_content"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:hint="Enter the break time"
-        android:layout_below="@+id/btime"
-        android:layout_toRightOf="@+id/btime"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Subjects"
-        android:id="@+id/sub"
-        android:textSize="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/btimes"/>
+        android:paddingLeft="10dp"
+        android:background="@drawable/ov"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tsl" />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Subjects"-->
+<!--        android:id="@+id/sub"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@id/btimes"/>-->
     <EditText
         android:id="@+id/subs1"
-        android:layout_width="wrap_content"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:hint="Enter the number the subjects"
-        android:layout_toRightOf="@id/sub"
-        android:layout_below="@+id/sub"
+        android:background="@drawable/ov"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btimes"
+        android:paddingLeft="10dp"
         android:maxLines="15"/>
     <EditText
         android:id="@+id/subss"
-        android:layout_width="wrap_content"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
         android:hint="Enter the number the subjects"
-        android:layout_toRightOf="@id/sub"
+        android:background="@drawable/ov"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/subs1"
         android:maxLines="15"/>
     <Button

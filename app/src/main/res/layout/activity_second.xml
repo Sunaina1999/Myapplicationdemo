@@ -86,15 +86,15 @@ tools:context=".second">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textSize="20dp"
-            android:id="@+id/g"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="450dp"
-            android:layout_marginLeft="20dp"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Gender"-->
+<!--            android:textSize="20dp"-->
+<!--            android:id="@+id/g"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:layout_marginTop="450dp"-->
+<!--            android:layout_marginLeft="20dp"/>-->
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,15 +105,15 @@ tools:context=".second">
                 android:layout_height="wrap_content"
                 android:id="@+id/male1"
                 android:text="Male"
-                android:layout_marginTop="450dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginTop="440dp"
+                android:layout_marginLeft="120dp"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/female1"
                 android:text="Female"
-                android:layout_marginTop="450dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginTop="440dp"
+                android:layout_marginLeft="20dp"/>
         </RadioGroup>
 
     </LinearLayout>

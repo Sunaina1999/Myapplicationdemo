@@ -48,13 +48,15 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
-            android:background="@drawable/ov"
+
             android:hint="Name"
-            android:id="@+id/edt_name">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="150dp"
-                android:layout_height="30dp"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/edt_name"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
 <!--            <EditText-->
 <!--                android:layout_width="150dp"-->
@@ -88,14 +90,16 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:paddingLeft="10dp"
-            android:background="@drawable/ov"
+
             android:hint="Password"
-            android:id="@+id/edt_password">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="150dp"
-                android:layout_height="30dp"/>
+           >
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="numberPassword"
+               android:id="@+id/edt_password"/>
         </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:id="@+id/forgot"
@@ -113,8 +117,9 @@
                 android:text="Sign In"
                 android:textSize="20dp"
                 android:layout_marginTop="25dp"
+                android:background="@drawable/ov"
                 android:layout_gravity="center"
-                android:id="@+id/btn_back"
+                android:id="@+id/btn_signin"
                 ></Button>
         <TextView
             android:layout_width="wrap_content"
@@ -128,9 +133,10 @@
                 android:layout_height="wrap_content"
                 android:text="Sign Up"
                 android:textSize="20dp"
+                android:background="@drawable/ov"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:id="@+id/btn_next"></Button>
+                android:id="@+id/btn_signup"></Button>
     </LinearLayout>
     </androidx.cardview.widget.CardView>
     </RelativeLayout>

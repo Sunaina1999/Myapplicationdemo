@@ -43,10 +43,10 @@ EditText m1,m2,m3,m4,m5,m6,m7,m8;
         String msg2 = i.getStringExtra("ke2");
         String msg3 = i.getStringExtra("ke3");
         String msg4 = i.getStringExtra("ke4");
-        r1= new TableRow(this);
-        r2=new TableRow(this);
-        r3=new TableRow(this);
-        l=new TableLayout(this);
+//        r1= new TableRow(this);
+//        r2=new TableRow(this);
+//        r3=new TableRow(this);
+//        l=new TableLayout(this);
         switch (msg)
         {
             case "Mon-Tue": {
