@@ -66,10 +66,20 @@ public class second extends AppCompatActivity {
                 admin=new Users(name,pass,cpass,email,contact,gender);
 //                Toast.makeText(second.this,rs.getText(), Toast.LENGTH_SHORT).show();
 
-       fb.collection("Teacher").document(name).set(admin).addOnSuccessListener(new OnSuccessListener<Void>() {
+       fb.collection("Registration Details ").document(name).set(admin).addOnSuccessListener(new OnSuccessListener<Void>() {
            @Override
            public void onSuccess(Void aVoid) {
-               Toast.makeText(second.this, "Details Added", Toast.LENGTH_SHORT).show();
+               if(pass.equals(cpass))
+               {
+                   Toast.makeText(second.this, "Details Added", Toast.LENGTH_SHORT).show();
+                   Intent ii=new Intent(second.this,home.class);
+                   startActivity(ii);
+               }
+               else
+               {
+                   Toast.makeText(second.this, "Password does not match", Toast.LENGTH_SHORT).show();
+               }
+
            }
        }).addOnFailureListener(new OnFailureListener() {
            @Override
@@ -77,16 +87,7 @@ public class second extends AppCompatActivity {
                Toast.makeText(second.this, "Invalid Details", Toast.LENGTH_SHORT).show();
            }
        });
-                if(edtpassword.getText().toString().equals(edtcpassword.getText().toString()))
-                {
-                    Toast.makeText(second.this, "Password match", Toast.LENGTH_SHORT).show();
-                    Intent ii=new Intent(second.this,home.class);
-                    startActivity(ii);
-                }
-                else
-                {
-                    Toast.makeText(second.this, "Password does not match", Toast.LENGTH_SHORT).show();
-                }
+
             }
         });
     }

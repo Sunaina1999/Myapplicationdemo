@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/root"
     tools:context=".studentde">
     <TextView
         android:layout_width="wrap_content"
@@ -75,7 +76,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/dest7"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
         android:background="@drawable/cell_shape"
         android:layout_below="@id/dest4"
         android:layout_toRightOf="@id/dest6"/>
@@ -113,10 +114,27 @@
         android:background="@drawable/cell_shape"
         android:layout_below="@id/dest9"
         android:layout_toRightOf="@+id/dest10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dest12"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/dest10"
+        android:text="Date of Birth"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dest13"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="86dp"
+        android:background="@drawable/cell_shape"
+        android:layout_below="@id/dest10"
+        android:layout_toRightOf="@+id/dest12"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/dest11"
+        android:layout_below="@id/dest12"
         android:text="Upload"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"

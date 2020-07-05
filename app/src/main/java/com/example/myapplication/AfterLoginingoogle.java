@@ -18,7 +18,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
 public class AfterLoginingoogle extends AppCompatActivity {
     TextView name,email;
-    ImageView userimage;
+//    ImageView userimage;
     Button logout;
     GoogleSignInClient googleSignInClient;
     @Override
@@ -40,10 +40,11 @@ public class AfterLoginingoogle extends AppCompatActivity {
         {
             String gname=signInAccount.getDisplayName();
             String gemail=signInAccount.getEmail();
+            Toast.makeText(this, gname, Toast.LENGTH_SHORT).show();
 //            Uri uri=signInAccount.getPhotoUrl();
 
-            name.setText(gname);
-            email.setText(gemail);
+//            name.setText(gname);
+//            email.setText(gemail);
 //            Glide.with(this).load(uri).into(userimage);
         }
         logout.setOnClickListener(new View.OnClickListener() {

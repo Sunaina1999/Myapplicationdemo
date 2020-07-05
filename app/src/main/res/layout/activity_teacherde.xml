@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dett4"
-        android:id="@+id/bde"
+        android:id="@+id/bdde"
         android:text="Insert"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"/>
@@ -81,16 +81,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bde"
+        android:layout_below="@+id/bdde"
         android:text="Modify"
         android:layout_centerHorizontal="true"
-        android:id="@+id/bde1"/>
+        android:id="@+id/bdde1"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bde1"
+        android:layout_below="@+id/bdde1"
         android:layout_centerHorizontal="true"
         android:text="Delete"
-        android:id="@+id/bde2"/>
+        android:id="@+id/bdde2"/>
 
 </RelativeLayout>

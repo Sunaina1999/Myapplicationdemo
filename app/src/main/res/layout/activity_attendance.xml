@@ -5,38 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".attendance">
-    
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Attendance Maintaince"
-    android:id="@+id/att"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Student Name"
-        android:layout_below="@id/att"
-        android:id="@+id/att1"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/att2"
-        android:layout_toRightOf="@id/att1"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Roll No."
-        android:layout_below="@id/att1"
-        android:id="@+id/att3"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/att4"
-        android:layout_below="@id/att"
-        android:layout_toRightOf="@id/att3"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/att3"
-        android:text="Course"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/prv"/>
+<!--   <TextView-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:id="@+id/attname"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/attuerid"-->
+<!--        android:layout_below="@id/attname"/>-->
+
 </RelativeLayout>

@@ -91,7 +91,6 @@ public class first extends AppCompatActivity {
                                     {
                                         Intent ii=new Intent(getApplicationContext(),home.class);
                                         startActivity(ii);
-                                        finish();
                                     }
                                     else
                                     {

@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -15,27 +16,36 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
+        <activity android:name=".ViewPdfnotice"></activity>
+        <activity android:name=".Recyl">
+
+        </activity>
         <activity android:name=".AfterLoginingoogle" />
-        <activity android:name=".googlesignin">
+        <activity android:name=".googlesignin" >
 
         </activity>
         <activity android:name=".otp" />
         <activity android:name=".phone" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                    </activity>
+        <activity android:name=".googlebutton" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".googlebutton" />
-        <activity android:name=".studentde" />
+        <activity android:name=".studentde"></activity>
         <activity android:name=".teacherde" />
         <activity android:name=".datesheet" />
         <activity android:name=".syllabus" />
         <activity android:name=".notes" />
         <activity android:name=".jsonvol" />
-        <activity android:name=".notice" />
-        <activity android:name=".attendance" />
+        <activity android:name=".notice" >
+
+
+        </activity>
+        <activity android:name=".attendance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".current" />
         <activity android:name=".tablegrid" />
         <activity android:name=".forgotpass" />
@@ -43,7 +53,7 @@
         <activity android:name=".pgr" />
         <activity android:name=".alert" />
         <activity android:name=".timetable" />
-        <activity android:name=".rcv" />
+        <activity android:name=".rcv"></activity>
         <activity android:name=".smpalarm" />
         <activity android:name=".tmpick" />
         <activity android:name=".dtpick" />
