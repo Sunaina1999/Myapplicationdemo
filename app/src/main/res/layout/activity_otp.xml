@@ -10,7 +10,7 @@
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Enter the otp"
+    android:hint="Enter the otp"
     android:id="@+id/otenter"/>
     <Button
         android:layout_width="wrap_content"

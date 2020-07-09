@@ -19,7 +19,13 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class studentde extends AppCompatActivity {
 EditText e1,e2,e3,e4,e5,e6,e7;
 Button b1,b2,b3;
-    String roll,name,course,mail,contact,userid,dofb;
+    int roll;
+    String name;
+    String course;
+    String mail;
+    String cont;
+    String userid;
+    String dob;
     FirebaseFirestore fb;
     Users1 users1 ;
 
@@ -41,14 +47,14 @@ Button b1,b2,b3;
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                roll=e1.getText().toString();
+                roll=Integer.parseInt(e1.getText().toString());
                 name=e2.getText().toString();
                 course=e3.getText().toString();
                 mail=e4.getText().toString();
-                contact=e5.getText().toString();
+                cont=e5.getText().toString();
                 userid=e6.getText().toString();
-                dofb=e7.getText().toString();
-                users1=new Users1( roll,name,course,mail,contact,userid,dofb);
+                dob=e7.getText().toString();
+                users1=new Users1( roll,name,course,mail,cont,userid,dob);
                 fb.collection("Student").document(name).set(users1).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
@@ -66,14 +72,14 @@ Button b1,b2,b3;
              b2.setOnClickListener(new View.OnClickListener() {
         @Override
           public void onClick(View v) {
-            roll=e1.getText().toString();
+            roll=Integer.parseInt(e1.getText().toString());
             name=e2.getText().toString();
             course=e3.getText().toString();
             mail=e4.getText().toString();
-            contact=e5.getText().toString();
+            cont=e5.getText().toString();
             userid=e6.getText().toString();
-            dofb=e7.getText().toString();
-            fb.collection("Student").document(name).update("roll",roll,"name",name,"course",course,"mail",mail,"contact",contact,"userid",userid,"dofb",dofb)
+            dob=e7.getText().toString();
+            fb.collection("Student").document(name).update("roll",roll,"name",name,"course",course,"mail",mail,"contact",cont,"userid",userid,"dob",dob)
                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
@@ -90,13 +96,13 @@ Button b1,b2,b3;
        b3.setOnClickListener(new View.OnClickListener() {
      @Override
      public void onClick(View v) {
-         roll=e1.getText().toString();
+         roll=Integer.parseInt(e1.getText().toString());
          name=e2.getText().toString();
          course=e3.getText().toString();
          mail=e4.getText().toString();
-         contact=e5.getText().toString();
+         cont=e5.getText().toString();
          userid=e6.getText().toString();
-         dofb=e7.getText().toString();
+         dob=e7.getText().toString();
          fb.collection("Student").document(name).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
              @Override
              public void onSuccess(Void aVoid) {

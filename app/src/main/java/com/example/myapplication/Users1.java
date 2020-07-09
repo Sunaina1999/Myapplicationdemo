@@ -1,33 +1,41 @@
 package com.example.myapplication;
 
 
-public class Users1 {
-    public Users1()
-    {
+import java.util.List;
 
-    }
-    String roll;
+public class Users1 {
+    int roll;
     String name;
+    String course;
+    String dob;
+    String mail;
+
+
+
+    public Users1(int roll, String name, String course, String dob, String mail, Boolean status, String date, String cont, String userid, List<Users1> list) {
+        this.roll = roll;
+        this.name = name;
+        this.course = course;
+        this.dob = dob;
+        this.mail = mail;
+        this.status = status;
+        this.date = date;
+        this.cont = cont;
+        this.userid = userid;
+        this.list = list;
+    }
+
+    public int getRoll() {
+        return roll;
+    }
+
+    public void setRoll(int roll) {
+        this.roll = roll;
+    }
 
     public String getName() {
         return name;
     }
-
-    public String getUserid() {
-        return userid;
-    }
-
-    String course;
-
-    public String getRoll() {
-        return roll;
-    }
-
-    public void setRoll(String roll) {
-        this.roll = roll;
-    }
-
-
 
     public void setName(String name) {
         this.name = name;
@@ -57,6 +65,22 @@ public class Users1 {
         this.mail = mail;
     }
 
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public String getCont() {
         return cont;
     }
@@ -65,25 +89,25 @@ public class Users1 {
         this.cont = cont;
     }
 
-
+    public String getUserid() {
+        return userid;
+    }
 
     public void setUserid(String userid) {
         this.userid = userid;
     }
 
-    String dob;
-    String mail;
-
-    public Users1(String roll, String name, String course, String dob, String mail, String cont, String userid) {
-        this.roll = roll;
-        this.name = name;
-        this.course = course;
-        this.dob = dob;
-        this.mail = mail;
-        this.cont = cont;
-        this.userid = userid;
+    public List<Users1> getList() {
+        return list;
     }
 
+    public void setList(List<Users1> list) {
+        this.list = list;
+    }
+
+    Boolean status;
+    String date;
     String cont;
     String userid;
+    List<Users1> list;
 }

@@ -99,6 +99,10 @@ public class first extends AppCompatActivity {
                                 }
                             }
                         }
+                        else
+                        {
+                            Toast.makeText(first.this, "Task is not done", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

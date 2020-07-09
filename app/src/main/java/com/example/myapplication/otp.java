@@ -115,7 +115,7 @@ public class otp extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     FirebaseUser user = task.getResult().getUser();
                     String num="+91"+mobileno;
-                    Intent intent = new Intent(otp.this, phone.class);
+                    Intent intent = new Intent(otp.this, forgotpass.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("UserMobile",num);
                     startActivity(intent);

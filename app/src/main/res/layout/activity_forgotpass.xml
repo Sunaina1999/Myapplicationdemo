@@ -46,21 +46,21 @@
                 android:textColor="@android:color/black"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:text="We need your registered email address or phone number to send you password reset"></TextView>
-        <EditText
-            android:layout_width="185dp"
-            android:layout_height="wrap_content"
-            android:hint="Email-ID"
-            android:textSize="20dp"
-            android:paddingLeft="10dp"
-            android:inputType="textPersonName"
-            android:textColorHint="@android:color/black"
-            android:textColor="@android:color/holo_orange_dark"
-            android:layout_gravity="center"
-            android:background="@drawable/ov"
-            android:layout_marginTop="40dp"
-            android:id="@+id/newpass">
-        </EditText>
+                android:text="We need your phone number to send you password reset"></TextView>
+<!--        <EditText-->
+<!--            android:layout_width="185dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Email-ID"-->
+<!--            android:textSize="20dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:textColorHint="@android:color/black"-->
+<!--            android:textColor="@android:color/holo_orange_dark"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/ov"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:id="@+id/newpass">-->
+<!--        </EditText>-->
         <EditText
             android:layout_width="185dp"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
             android:textSize="20dp"
             android:layout_gravity="center"
             android:background="@drawable/ov"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:textColor="@android:color/holo_orange_dark"
             android:id="@+id/cnewpass">
         </EditText>
@@ -80,7 +80,7 @@
             android:id="@+id/forgotpassw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Send a link"
+            android:text="Send a OTP"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
