@@ -30,13 +30,15 @@
         <activity android:name=".syllabus" />
         <activity android:name=".notes" />
         <activity android:name=".jsonvol" />
-        <activity android:name=".notice"></activity>
-        <activity android:name=".attendance">
+        <activity android:name=".notice">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".attendance">
+
         </activity>
         <activity android:name=".current" />
         <activity android:name=".tablegrid" />

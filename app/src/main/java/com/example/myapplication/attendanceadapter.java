@@ -93,7 +93,7 @@ public class attendanceadapter extends RecyclerView.Adapter<attendanceadapter.My
     }
 
     public void add(String name1) {
-     this.list.add(name1);
+//     this.list.add(name1);
     }
 
     public class MyHolder extends RecyclerView.ViewHolder {

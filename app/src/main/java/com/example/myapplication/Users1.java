@@ -12,7 +12,7 @@ public class Users1 {
 
 
 
-    public Users1(int roll, String name, String course, String dob, String mail, Boolean status, String date, String cont, String userid, List<Users1> list) {
+    public Users1(int roll, String name, String course, String dob, String mail, String date, String cont) {
         this.roll = roll;
         this.name = name;
         this.course = course;

@@ -72,7 +72,7 @@ b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 Task<Uri> uri=taskSnapshot.getStorage().getDownloadUrl();
-                while(!uri.isComplete());
+                while(uri.isComplete());
                 Uri url=uri.getResult();
                 noticehelper uploadPDF=new noticehelper(e1.getText().toString(),url.toString());
                 databaseReference.child(databaseReference.push().getKey()).setValue(uploadPDF);
