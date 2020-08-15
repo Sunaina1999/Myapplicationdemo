@@ -4,32 +4,39 @@ package com.example.myapplication;
 import java.util.List;
 
 public class Users1 {
-    int roll;
+
+
+    String roll;
     String name;
+
+    public Users1() {
+    }
+
     String course;
-    String dob;
-    String mail;
 
-
-
-    public Users1(int roll, String name, String course, String dob, String mail, String date, String cont) {
+    public Users1(String roll, String name, String course, String mail, String cont, String userid, String dob) {
         this.roll = roll;
         this.name = name;
         this.course = course;
-        this.dob = dob;
         this.mail = mail;
-        this.status = status;
-        this.date = date;
         this.cont = cont;
         this.userid = userid;
-        this.list = list;
+        this.dob = dob;
     }
 
-    public int getRoll() {
+    String mail;
+    String cont;
+    String userid;
+    String dob;
+
+
+    List<Student> students;
+
+    public String getRoll() {
         return roll;
     }
 
-    public void setRoll(int roll) {
+    public void setRoll(String roll) {
         this.roll = roll;
     }
 
@@ -65,21 +72,6 @@ public class Users1 {
         this.mail = mail;
     }
 
-    public Boolean getStatus() {
-        return status;
-    }
-
-    public void setStatus(Boolean status) {
-        this.status = status;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
 
     public String getCont() {
         return cont;
@@ -97,17 +89,12 @@ public class Users1 {
         this.userid = userid;
     }
 
-    public List<Users1> getList() {
-        return list;
+    public List<Student> getStudents() {
+        return students;
     }
 
-    public void setList(List<Users1> list) {
-        this.list = list;
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 
-    Boolean status;
-    String date;
-    String cont;
-    String userid;
-    List<Users1> list;
 }

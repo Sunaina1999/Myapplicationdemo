@@ -25,12 +25,12 @@ import java.io.ObjectInputStream;
 import java.util.List;
 
 public class attendanceadapter extends RecyclerView.Adapter<attendanceadapter.MyHolder>{
-    List<Users1> list;
+    List<Student> list1;
     CheckBox checkal;
     CheckBox uncheckal;
 
-    public attendanceadapter(attendance attendance, List<Users1> list, CheckBox checkall, CheckBox uncheckall) {
-        this.list = list;
+    public attendanceadapter(attendance attendance, List<Student> list, CheckBox checkall, CheckBox uncheckall) {
+        this.list1 = list;
         this.checkal = checkall;
         this.uncheckal = uncheckall;
     }
@@ -44,7 +44,7 @@ public class attendanceadapter extends RecyclerView.Adapter<attendanceadapter.My
 
     @Override
     public void onBindViewHolder(@NonNull attendanceadapter.MyHolder myholder, int position) {
-        final Users1 student = list.get(position);
+        final Student student = list1.get(position);
         myholder.roll.setText(String.valueOf(student.roll));
         myholder.student.setText(String.valueOf(student.name));
         myholder.check.setChecked(student.status);
@@ -73,14 +73,14 @@ public class attendanceadapter extends RecyclerView.Adapter<attendanceadapter.My
     }
 
     private void showAllBoxes() {
-        for (Users1 student : list) {
+        for (Student student : list1) {
             student.setStatus(true);
         }
         notifyDataSetChanged();
     }
 
     private void hideallboxes() {
-        for (Users1 student : list)
+        for (Student student : list1)
         {
             student.setStatus(false);
         }
@@ -89,12 +89,12 @@ public class attendanceadapter extends RecyclerView.Adapter<attendanceadapter.My
 
     @Override
     public int getItemCount() {
-        return list.size();
+        return 0;
     }
 
-    public void add(String name1) {
+//    public void add(String name1) {
 //     this.list.add(name1);
-    }
+//    }
 
     public class MyHolder extends RecyclerView.ViewHolder {
         TextView roll,student;
@@ -107,7 +107,7 @@ public class attendanceadapter extends RecyclerView.Adapter<attendanceadapter.My
             check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    list.get(getAdapterPosition()).setStatus(isChecked);
+                    list1.get(getAdapterPosition()).setStatus(isChecked);
                 }
             });
         }

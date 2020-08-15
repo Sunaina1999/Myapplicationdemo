@@ -43,6 +43,12 @@ b1.setOnClickListener(new View.OnClickListener() {
         selectPDFFile();
     }
 });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),ViewPdfnotice.class));
+            }
+        });
 
     }
 
@@ -72,7 +78,7 @@ b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 Task<Uri> uri=taskSnapshot.getStorage().getDownloadUrl();
-                while(uri.isComplete());
+                while(!uri.isComplete());
                 Uri url=uri.getResult();
                 noticehelper uploadPDF=new noticehelper(e1.getText().toString(),url.toString());
                 databaseReference.child(databaseReference.push().getKey()).setValue(uploadPDF);
@@ -86,11 +92,5 @@ b1.setOnClickListener(new View.OnClickListener() {
                 progressDialog.setMessage("Uploaded:"+ progress+"%");
             }
         });
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),ViewPdfnotice.class));
-            }
-        });
-    }
+        }
 }

@@ -92,5 +92,11 @@
         android:layout_centerHorizontal="true"
         android:text="Delete"
         android:id="@+id/bdde2"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bdde2"
+        android:layout_centerHorizontal="true"
+        android:text="View"
+        android:id="@+id/bdde3"/>
 </RelativeLayout>

@@ -14,16 +14,19 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.gson.Gson;
 
 public class attendanceview extends AppCompatActivity {
 EditText e1;
 Button b1;
 FirebaseFirestore f;
-Users1 user1;
+Student stu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendanceview);
+        stu=new Gson().fromJson(getIntent().getStringExtra("list"),Student.class);
+        f=FirebaseFirestore.getInstance();
         e1=findViewById(R.id.dateview);
         b1=findViewById(R.id.okview);
         final String date=e1.getText().toString();
@@ -36,8 +39,8 @@ f.collection("Attendance").get().addOnCompleteListener(new OnCompleteListener<Qu
             {
                 if(task.getResult().size()!=0)
                 {
-                    user1=queryDocumentSnapshot.toObject(Users1.class);
-                    String fbdate=user1.getDate();
+                    stu=queryDocumentSnapshot.toObject(Student.class);
+                    String fbdate=stu.getDate();
                     if(fbdate.equals(date))
                     {
 

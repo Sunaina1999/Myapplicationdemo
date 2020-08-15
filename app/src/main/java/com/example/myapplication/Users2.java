@@ -7,6 +7,9 @@ public class Users2 {
         this.emailid = emailid;
     }
 
+    public Users2() {
+    }
+
     String name;
 
     public String getName() {
