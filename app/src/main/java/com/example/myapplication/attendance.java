@@ -49,15 +49,14 @@ public class attendance extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseFirestore db;
     Button btn;
-    Student student;
-    attendanceadapter attendAdapter;
+
     ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendance);
         final String id=getIntent().getStringExtra("id");
-final Users1 u= new Gson().fromJson(getIntent().getStringExtra("list"), Users1.class);
+final Users1 u= new Gson().fromJson(getIntent().getStringExtra("Student"), Users1.class);
         recyclerView = findViewById(R.id.prv);
         auth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
@@ -78,7 +77,6 @@ final Users1 u= new Gson().fromJson(getIntent().getStringExtra("list"), Users1.c
         progressDialog.setMessage("Saving Attendance..");
         progressDialog.setCanceledOnTouchOutside(false);
         progressDialog.setCancelable(false);
-
        btn.setOnClickListener(new View.OnClickListener() {
       @Override
        public void onClick(View v) {
@@ -94,8 +92,8 @@ student1.setDate(currentdate);
                   .document(currentdate).set(student1).addOnCompleteListener(new OnCompleteListener<Void>() {
               @Override
               public void onComplete(@NonNull Task<Void> task) {
-                  if (task.isSuccessful()) {
-
+                  if (task.isSuccessful())
+                  {
                       progressDialog.dismiss();
                       Toast.makeText(attendance.this, "Updated", Toast.LENGTH_SHORT).show();
                       finish();
@@ -110,6 +108,5 @@ student1.setDate(currentdate);
           });
     }
 });
-
-
-}}
+}
+}

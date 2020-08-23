@@ -32,17 +32,19 @@
         </activity>
         <activity android:name=".datesheet" />
         <activity android:name=".syllabus" />
-        <activity android:name=".notes" />
-        <activity android:name=".jsonvol" />
-        <activity android:name=".notice">
-
-        </activity>
-        <activity android:name=".attendance">
+        <activity android:name=".notes" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".jsonvol" />
+        <activity android:name=".notice">
+
+        </activity>
+        <activity android:name=".attendance">
+
         </activity>
         <activity android:name=".current" />
         <activity android:name=".tablegrid" />
@@ -58,7 +60,9 @@
         <activity android:name=".whatsapp" />
         <activity android:name=".spnn" />
         <activity android:name=".home" />
-        <activity android:name=".webv" />
+        <activity android:name=".webv" >
+
+        </activity>
         <activity android:name=".sv" />
         <activity android:name=".spn" />
         <activity android:name=".sp" />

@@ -23,7 +23,7 @@ Button b;
         e=findViewById(R.id.we);
         b=findViewById(R.id.bt);
         wv=findViewById(R.id.web);
-//        wv.loadUrl("https://developer.android.com/");
+        wv.loadUrl("https://developer.android.com/");
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,8 +31,8 @@ Button b;
             {
                 wv.getSettings().setJavaScriptEnabled(true);
                 wv.setWebViewClient(new WebViewClient());
-                String a=(e.getText()).toString();
-                wv.loadUrl(a);
+//                String a=(e.getText()).toString();
+//                wv.loadUrl(a);
 //                setData(Uri.parse("https://"+a));
 //                Intent i=new Intent(Intent.ACTION_VIEW);
 //                i.setData(Uri.parse("https://"+a));

@@ -92,10 +92,6 @@ public class attendanceadapter extends RecyclerView.Adapter<attendanceadapter.My
         return 0;
     }
 
-//    public void add(String name1) {
-//     this.list.add(name1);
-//    }
-
     public class MyHolder extends RecyclerView.ViewHolder {
         TextView roll,student;
         CheckBox check;

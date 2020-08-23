@@ -11,49 +11,10 @@
     android:text="Add the syllabus here..."
     android:layout_centerHorizontal="true"
     android:id="@+id/syll"/>
-    <EditText
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter the semester"
-        android:background="@drawable/ov"
-        android:id="@+id/syll11"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/syll"/>
-    <EditText
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter the name of the subject"
-        android:background="@drawable/ov"
-        android:id="@+id/syll1"
-        android:paddingLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/syll11"/>
-    <Button
+    <WebView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload"
-        android:layout_marginTop="20dp"
-        android:id="@+id/syll2"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/syll1"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/syll2"
-        android:id="@+id/syll3"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/syll4"
-        android:layout_below="@id/syll3"/>
+        android:background="@android:color/white"
+        android:id="@+id/webb2"/>
 
 </RelativeLayout>

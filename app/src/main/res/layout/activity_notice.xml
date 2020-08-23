@@ -14,31 +14,11 @@
     android:textSize="20dp"
     android:layout_marginTop="10dp"
     android:layout_centerHorizontal="true"/>
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter the name of the file"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="10dp"
-        android:background="@drawable/ov"
-        android:id="@+id/not1"
-        android:layout_below="@id/no"
-        android:layout_centerInParent="true"/>
-    <Button
+    <WebView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/not1"
-        android:layout_marginTop="20dp"
-        android:layout_centerInParent="true"
-        android:text="Upload"
-        android:id="@+id/up1"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/up1"
-        android:id="@+id/up2"
-        android:text="View"/>
+        android:background="@android:color/white"
+        android:id="@+id/webb1"/>
 
 
 </RelativeLayout>
